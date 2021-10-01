@@ -39,3 +39,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 vars:
     google_ads_schema: 'GOOGLE_ADS_DEMO'
+    fivetran_log:
+        fivetran_log_database: LAB_O5
+        fivetran_log_schema: fivetran_log
+        fivetran_log_using_transformations: false # this will disable all transformation + trigger_table logic
+        fivetran_log_using_triggers: false # this will disable only trigger_table logic
+        
